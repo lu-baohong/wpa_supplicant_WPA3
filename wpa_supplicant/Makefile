@@ -1,10 +1,5 @@
-ifndef CC
-CC=gcc
-endif
-
-ifndef CFLAGS
-CFLAGS = -MMD -O2 -Wall -g
-endif
+DESTDIR=./__install/
+BINDIR=$(DESTDIR)/bin
 
 ifdef LIBS
 # If LIBS is set with some global build system defaults, clone those for

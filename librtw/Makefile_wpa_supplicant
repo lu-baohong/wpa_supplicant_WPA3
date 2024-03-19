@@ -1,12 +1,6 @@
-ifndef CC
-CC=gcc
-endif
-
-ifndef AR
-AR=ar
-endif
 
 include ../wpa_supplicant/.config
+
 CFLAGS += -I$(abspath ./)
 CFLAGS += -I$(abspath ../src)
 CFLAGS += -I$(abspath ../src/drivers)

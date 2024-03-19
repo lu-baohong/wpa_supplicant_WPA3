@@ -1,12 +1,5 @@
-ifndef CC
-CC=gcc
-endif
 
-ifndef AR
-AR=ar
-endif
-
-include ../hostapd/.config
+include ../wpa_supplicant/.config
 
 CFLAGS += -I$(abspath ./)
 CFLAGS += -I$(abspath ../src)
